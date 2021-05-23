@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C022612326598DCB0040061A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C022612226598DCB0040061A /* TableViewController.swift */; };
+		C022612E265990E80040061A /* AddTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C022612D265990E80040061A /* AddTodoViewController.swift */; };
+		C02261382659A2A70040061A /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02261372659A2A70040061A /* CoreDataStack.swift */; };
+		C022613D265A79560040061A /* Todos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C022613B265A79560040061A /* Todos.xcdatamodeld */; };
 		C0D82B3626146CC4005C8761 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D82B3526146CC4005C8761 /* AppDelegate.swift */; };
 		C0D82B3826146CC4005C8761 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D82B3726146CC4005C8761 /* SceneDelegate.swift */; };
-		C0D82B3A26146CC4005C8761 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D82B3926146CC4005C8761 /* ViewController.swift */; };
 		C0D82B3D26146CC4005C8761 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0D82B3B26146CC4005C8761 /* Main.storyboard */; };
-		C0D82B4026146CC4005C8761 /* CoreDataToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0D82B3E26146CC4005C8761 /* CoreDataToDoList.xcdatamodeld */; };
 		C0D82B4226146CC5005C8761 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0D82B4126146CC5005C8761 /* Assets.xcassets */; };
 		C0D82B4526146CC5005C8761 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0D82B4326146CC5005C8761 /* LaunchScreen.storyboard */; };
-		C0D82B4F26146DAB005C8761 /* ToDoListItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D82B4D26146DAB005C8761 /* ToDoListItem+CoreDataClass.swift */; };
-		C0D82B5026146DAB005C8761 /* ToDoListItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D82B4E26146DAB005C8761 /* ToDoListItem+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C022612226598DCB0040061A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		C022612D265990E80040061A /* AddTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoViewController.swift; sourceTree = "<group>"; };
+		C02261372659A2A70040061A /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		C022613C265A79560040061A /* Todos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Todos.xcdatamodel; sourceTree = "<group>"; };
 		C0D82B3226146CC4005C8761 /* CoreDataToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0D82B3526146CC4005C8761 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0D82B3726146CC4005C8761 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C0D82B3926146CC4005C8761 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C0D82B3C26146CC4005C8761 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C0D82B3F26146CC4005C8761 /* CoreDataToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataToDoList.xcdatamodel; sourceTree = "<group>"; };
 		C0D82B4126146CC5005C8761 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0D82B4426146CC5005C8761 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0D82B4626146CC5005C8761 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0D82B4D26146DAB005C8761 /* ToDoListItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoListItem+CoreDataClass.swift"; sourceTree = "<group>"; };
-		C0D82B4E26146DAB005C8761 /* ToDoListItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoListItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +43,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C022611A26598D560040061A /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				C022612226598DCB0040061A /* TableViewController.swift */,
+				C022612D265990E80040061A /* AddTodoViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		C02261312659A1780040061A /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				C02261372659A2A70040061A /* CoreDataStack.swift */,
+				C022613B265A79560040061A /* Todos.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		C0D82B2926146CC4005C8761 = {
 			isa = PBXGroup;
 			children = (
@@ -62,26 +80,16 @@
 		C0D82B3426146CC4005C8761 /* CoreDataToDoList */ = {
 			isa = PBXGroup;
 			children = (
-				C0D82B5226146DC4005C8761 /* ToDoListItem */,
+				C02261312659A1780040061A /* CoreData */,
+				C022611A26598D560040061A /* VC */,
 				C0D82B3526146CC4005C8761 /* AppDelegate.swift */,
 				C0D82B3726146CC4005C8761 /* SceneDelegate.swift */,
-				C0D82B3926146CC4005C8761 /* ViewController.swift */,
 				C0D82B3B26146CC4005C8761 /* Main.storyboard */,
 				C0D82B4126146CC5005C8761 /* Assets.xcassets */,
 				C0D82B4326146CC5005C8761 /* LaunchScreen.storyboard */,
 				C0D82B4626146CC5005C8761 /* Info.plist */,
-				C0D82B3E26146CC4005C8761 /* CoreDataToDoList.xcdatamodeld */,
 			);
 			path = CoreDataToDoList;
-			sourceTree = "<group>";
-		};
-		C0D82B5226146DC4005C8761 /* ToDoListItem */ = {
-			isa = PBXGroup;
-			children = (
-				C0D82B4E26146DAB005C8761 /* ToDoListItem+CoreDataProperties.swift */,
-				C0D82B4D26146DAB005C8761 /* ToDoListItem+CoreDataClass.swift */,
-			);
-			path = ToDoListItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,11 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0D82B3A26146CC4005C8761 /* ViewController.swift in Sources */,
 				C0D82B3626146CC4005C8761 /* AppDelegate.swift in Sources */,
-				C0D82B4026146CC4005C8761 /* CoreDataToDoList.xcdatamodeld in Sources */,
-				C0D82B4F26146DAB005C8761 /* ToDoListItem+CoreDataClass.swift in Sources */,
-				C0D82B5026146DAB005C8761 /* ToDoListItem+CoreDataProperties.swift in Sources */,
+				C022613D265A79560040061A /* Todos.xcdatamodeld in Sources */,
+				C022612E265990E80040061A /* AddTodoViewController.swift in Sources */,
+				C02261382659A2A70040061A /* CoreDataStack.swift in Sources */,
+				C022612326598DCB0040061A /* TableViewController.swift in Sources */,
 				C0D82B3826146CC4005C8761 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,13 +371,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		C0D82B3E26146CC4005C8761 /* CoreDataToDoList.xcdatamodeld */ = {
+		C022613B265A79560040061A /* Todos.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				C0D82B3F26146CC4005C8761 /* CoreDataToDoList.xcdatamodel */,
+				C022613C265A79560040061A /* Todos.xcdatamodel */,
 			);
-			currentVersion = C0D82B3F26146CC4005C8761 /* CoreDataToDoList.xcdatamodel */;
-			path = CoreDataToDoList.xcdatamodeld;
+			currentVersion = C022613C265A79560040061A /* Todos.xcdatamodel */;
+			path = Todos.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
