@@ -11,7 +11,7 @@
         <!--Liste de Tâches-->
         <scene sceneID="9Ni-UE-i0b">
             <objects>
-                <tableViewController id="lUN-Pu-C8U" customClass="TableViewController" customModule="CoreDataToDoList" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="lUN-Pu-C8U" customClass="TodoTableViewController" customModule="CoreDataToDoList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Cev-62-S7v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,11 +105,6 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="30"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Annuler"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="8"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="annuler:" destination="BTj-14-9CU" eventType="touchUpInside" id="4LK-2z-es6"/>
                                                 </connections>

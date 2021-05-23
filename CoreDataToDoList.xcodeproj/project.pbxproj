@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C022612326598DCB0040061A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C022612226598DCB0040061A /* TableViewController.swift */; };
+		C022612326598DCB0040061A /* TodoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C022612226598DCB0040061A /* TodoTableViewController.swift */; };
 		C022612E265990E80040061A /* AddTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C022612D265990E80040061A /* AddTodoViewController.swift */; };
 		C02261382659A2A70040061A /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02261372659A2A70040061A /* CoreDataStack.swift */; };
 		C022613D265A79560040061A /* Todos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C022613B265A79560040061A /* Todos.xcdatamodeld */; };
@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C022612226598DCB0040061A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		C022612226598DCB0040061A /* TodoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewController.swift; sourceTree = "<group>"; };
 		C022612D265990E80040061A /* AddTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoViewController.swift; sourceTree = "<group>"; };
 		C02261372659A2A70040061A /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		C022613C265A79560040061A /* Todos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Todos.xcdatamodel; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		C022611A26598D560040061A /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				C022612226598DCB0040061A /* TableViewController.swift */,
+				C022612226598DCB0040061A /* TodoTableViewController.swift */,
 				C022612D265990E80040061A /* AddTodoViewController.swift */,
 			);
 			path = VC;
@@ -166,7 +166,7 @@
 				C022613D265A79560040061A /* Todos.xcdatamodeld in Sources */,
 				C022612E265990E80040061A /* AddTodoViewController.swift in Sources */,
 				C02261382659A2A70040061A /* CoreDataStack.swift in Sources */,
-				C022612326598DCB0040061A /* TableViewController.swift in Sources */,
+				C022612326598DCB0040061A /* TodoTableViewController.swift in Sources */,
 				C0D82B3826146CC4005C8761 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

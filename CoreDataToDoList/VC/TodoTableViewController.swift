@@ -46,9 +46,9 @@ class TodoTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "TodoCell", for: indexPath)
 
-        // Configure the cell...
         let todo = resultsController.object(at: indexPath)
         cell.textLabel?.text = todo.title
 
@@ -58,7 +58,7 @@ class TodoTableViewController: UITableViewController {
     // MARK: - Table view delegate
     
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let action = UIContextualAction(style: .destructive, title: "Delete") { (action, view, completion) in
+        let action = UIContextualAction(style: .destructive, title: "Supprimer") { (action, view, completion) in
             // TODO: Delete todo
             let todo = self.resultsController.object(at: indexPath)
             self.resultsController.managedObjectContext.delete(todo)
@@ -70,14 +70,14 @@ class TodoTableViewController: UITableViewController {
                 completion(false)
             }
         }
-        action.image = #imageLiteral(resourceName: "trash")
+        action.image = UIImage(named: "trash")
         action.backgroundColor = .red
         
         return UISwipeActionsConfiguration(actions: [action])
     }
     
     override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let action = UIContextualAction(style: .destructive, title: "Check") { (action, view, completion) in
+        let action = UIContextualAction(style: .destructive, title: "Fait") { (action, view, completion) in
             let todo = self.resultsController.object(at: indexPath)
             self.resultsController.managedObjectContext.delete(todo)
             do {
@@ -88,7 +88,7 @@ class TodoTableViewController: UITableViewController {
                 completion(false)
             }
         }
-        action.image = #imageLiteral(resourceName: "check")
+        action.image = UIImage(named: "check")
         action.backgroundColor = .green
         
         return UISwipeActionsConfiguration(actions: [action])
