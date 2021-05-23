@@ -9,11 +9,19 @@ import UIKit
 import CoreData
 
 class TodoTableViewController: UITableViewController {
+   
     
     // MARK: - Properties
     
+    var todos: [Todo] = []
+    
     var resultsController: NSFetchedResultsController<Todo>!
     let coreDataStack = CoreDataStack()
+    
+    private var managedContext: NSManagedObjectContext {
+        (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +45,46 @@ class TodoTableViewController: UITableViewController {
         } catch {
             print("Perform fetch error: \(error)")
         }
+        
+//        let searchController = UISearchController(searchResultsController: nil)
+//        searchController.obscuresBackgroundDuringPresentation = false
+//        searchController.searchResultsUpdater = self
+//        navigationItem.searchController = searchController
+//        navigationItem.leftBarButtonItem = editButtonItem
+        
     }
+    
+    //MARK: - Private Methods
+    
+//    private func fetchItems(searchQuery: String? = nil) -> [Todo] {
+//        let fetchRequest: NSFetchRequest<Todo> = Todo.fetchRequest()
+//
+//        let dateSortDescriptor = NSSortDescriptor(key: "date", ascending: true)
+//        let titleSortDescriptor = NSSortDescriptor(key: "title", ascending: true)
+//
+//        fetchRequest.sortDescriptors = [dateSortDescriptor, titleSortDescriptor]
+//
+//        resultsController = NSFetchedResultsController(
+//            fetchRequest: fetchRequest,
+//            managedObjectContext: coreDataStack.managedContext,
+//            sectionNameKeyPath: nil,
+//            cacheName: nil
+//        )
+//        resultsController.delegate = self
+//
+//        if let searchQuery = searchQuery, !searchQuery.isEmpty {
+//            let predicate = NSPredicate(format: "%K contains[cd] %@",
+//                                        argumentArray: [#keyPath(Todo.title), searchQuery])
+//            fetchRequest.predicate = predicate
+//        }
+//
+//        do {
+//            return try self.managedContext.fetch(fetchRequest)
+//        } catch {
+//            print("Perform fetch error: \(error)")
+//        }
+//    }
+    
 
     // MARK: - Table view data source
     
@@ -149,3 +196,12 @@ extension TodoTableViewController: NSFetchedResultsControllerDelegate {
         }
     }
 }
+
+//extension TodoTableViewController: UISearchResultsUpdating {
+//    func updateSearchResults(for searchController: UISearchController) {
+//        let searchQuery = searchController.searchBar.text
+//        todos = fetchItems(searchQuery: searchQuery)
+//        tableView.reloadData()
+//    }
+//}
+
