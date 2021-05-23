@@ -51,6 +51,11 @@ class TodoTableViewController: UITableViewController {
 
         let todo = resultsController.object(at: indexPath)
         cell.textLabel?.text = todo.title
+        cell.detailTextLabel?.text = DateFormatter.localizedString(
+            from: todo.date!,
+            dateStyle: .medium,
+            timeStyle: .short
+        )
 
         return cell
     }
